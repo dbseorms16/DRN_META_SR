@@ -57,12 +57,12 @@ class Model(nn.Module):
         num_parameter = self.count_parameters(self.model)
         ckp.write_log(f"The number of parameters is {num_parameter / 1000 ** 2:.2f}M")
 
-    def forward(self, x, idx_scale=0):
+    def forward(self, x, pos_mat, idx_scale=0):
         self.idx_scale = idx_scale
         target = self.get_model()
         if hasattr(target, 'set_scale'):
             target.set_scale(idx_scale)
-        return self.model(x)
+        return self.model(x, pos_mat)
 
     def get_model(self):
         if self.n_GPUs == 1:

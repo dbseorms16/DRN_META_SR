@@ -65,7 +65,6 @@ class Trainer():
                 self.dual_optimizers[i].zero_grad()
 
             # forward
-           
             sr = self.model(lr[0])
 
             # flip train
@@ -139,12 +138,12 @@ class Trainer():
         self.ckp.write_log('\nEvaluation:')
         self.ckp.add_log(torch.zeros(1, 1))
         self.model.eval()
+        device = torch.device('cpu' if self.opt.cpu else 'cuda')
 
         timer_test = utility.timer()
         with torch.no_grad():
             scale = max(self.scale)
             for si, s in enumerate([scale]):
-                f= open('5060_flip o.txt', 'w')
                 eval_psnr = 0
                 eval_simm =0
                 tqdm_test = tqdm(self.loader_test, ncols=80)
@@ -155,8 +154,14 @@ class Trainer():
                         lr, hr = self.prepare(lr, hr)
                     else:
                         lr, = self.prepare(lr)
+                     
+                    N,C,H,W = lr[0].size()
+                    outH,outW = int(H*scale),int(W*scale)
 
-                    sr = self.model(lr[0])
+                    scale_coord_map, mask = self.input_matrix_wpn(H,W,scale)
+                   
+                    scale_coord_map = scale_coord_map.to(device)
+                    sr = self.model(lr[0], scale_coord_map)
                     if isinstance(sr, list): sr = sr[-1]
 
                     sr = utility.quantize(sr, self.opt.rgb_range)

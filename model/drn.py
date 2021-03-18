@@ -3,12 +3,26 @@ import torch.nn as nn
 import torch.nn.functional as nnf
 from model import common
 from option import args
-
+import math
 
 def make_model(opt):
     return DRN(opt)
 
+class Pos2Weight(nn.Module):
+    def __init__(self,inC, kernel_size=3, outC=3):
+        super(Pos2Weight,self).__init__()
+        self.inC = inC
+        self.kernel_size=kernel_size
+        self.outC = outC
+        self.meta_block=nn.Sequential(
+            nn.Linear(3,256),
+            nn.ReLU(inplace=True),
+            nn.Linear(256,self.kernel_size*self.kernel_size*self.inC*self.outC)
+        )
+    def forward(self,x):
 
+        output = self.meta_block(x)
+        return output
 class DRN(nn.Module):
     def __init__(self, opt, conv=common.default_conv):
         super(DRN, self).__init__()
@@ -83,9 +97,20 @@ class DRN(nn.Module):
             )
         self.tail = nn.ModuleList(tail)
 
+        self.P2W = Pos2Weight(inC=opt.n_colors, kernel_size=kernel_size, outC= opt.n_colors)
         self.add_mean = common.MeanShift(opt.rgb_range, rgb_mean, rgb_std, 1)
 
-    def forward(self, x):
+    def repeat_x(self,x):
+        scale_int = math.ceil(self.scale)
+        N,C,H,W = x.size()
+        x = x.view(N,C,H,1,W,1)
+
+        x = torch.cat([x]*scale_int,3)
+        x = torch.cat([x]*scale_int,5).permute(0,3,5,1,2,4)
+
+        return x.contiguous().view(-1, C, H, W)
+
+    def forward(self, x, pos_mat):
         # upsample x to target sr size
         x = self.upsample(x)
 
@@ -121,4 +146,22 @@ class DRN(nn.Module):
 
             results.append(sr)
 
-        return results
+            local_weight = self.P2W(pos_mat.view(pos_mat.size(1),-1))   ###   (outH*outW, outC*inC*kernel_size*kernel_size)
+            up_x = self.repeat_x(sr)    
+            # N*r^2 x [inC * kH * kW] x [inH * inW]
+            cols = nn.functional.unfold(up_x, 3,padding=1)
+            scale_int = math.ceil(self.scale)
+
+            cols = cols.contiguous().view(cols.size(0)//(scale_int**2),scale_int**2, cols.size(1), cols.size(2), 1).permute(0,1, 3, 4, 2).contiguous()
+
+            local_weight = local_weight.contiguous().view(x.size(2),scale_int, x.size(3),scale_int,-1,3).permute(1,3,0,2,4,5).contiguous()
+            local_weight = local_weight.contiguous().view(scale_int**2, x.size(2)*x.size(3),-1, 3)
+
+            out = torch.matmul(cols,local_weight).permute(0,1,4,2,3)
+            out = out.contiguous().view(x.size(0),scale_int,scale_int,3,x.size(2),x.size(3)).permute(0,3,4,1,5,2)
+            out = out.contiguous().view(x.size(0),3, scale_int*x.size(2),scale_int*x.size(3))
+            sr = self.add_mean(out)
+
+            sr = self.add_mean(sr)
+            results.append(sr)
+            return results
