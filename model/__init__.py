@@ -37,6 +37,7 @@ class Model(nn.Module):
         else:
             sf = 3
 
+       
         self.model = drn.make_model(opt).to(self.device)
         self.dual_models = []
         for _ in self.opt.scale:
@@ -87,10 +88,16 @@ class Model(nn.Module):
 
     def save(self, path, is_best=False):
         target = self.get_model()
+
         torch.save(
             target.state_dict(), 
             os.path.join(path, 'model', args.data_train +'_latest_x'+str(args.scale[len(args.scale)-1])+'.pt')
         )
+
+        # weight_dict = {}
+        # for weight_name in target.state_dict():
+        #     name_space = weight_name.split('.')
+        #     print(weight_name)
         if is_best:
             torch.save(
                 target.state_dict(),
@@ -118,7 +125,27 @@ class Model(nn.Module):
         #### load primal model ####
         if pre_train != '.':
             print('Loading model from {}'.format(pre_train))
+
+            # weight4 = (torch.load(pre_train, map_location=lambda storage, loc: storage))
+        
+            # print(weight4['up_blocks.0.37.body.2.bias'])
+            # print(weight4['up_blocks.1.37.body.2.bias'])
+            # param0_names = []
+            # param1_names = []
+
+            # for param in weight4:
+            #     param_s = param.split('.')
+            #     if param_s[0] == 'up_blocks' and param_s[1] == '0':
+            #         param0_names.append(param)
+            #     if param_s[0] == 'up_blocks' and param_s[1] == '1':
+            #         param1_names.append(param)
+
+            # # for idx, param0 in enumerate(param0_names[:-2]):
+            #     # weight4[param0] = weight4[param1_names[idx]]
+            # # print(weight4['up_blocks.0.37.body.2.bias'])
+
             self.get_model().load_state_dict(
+                # weight4,
                 torch.load(pre_train, **kwargs),
                 strict=False
             )

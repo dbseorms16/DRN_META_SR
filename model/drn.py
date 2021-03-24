@@ -6,6 +6,7 @@ from option import args
 
 
 def make_model(opt):
+    print(DRN(opt))
     return DRN(opt)
 
 
@@ -114,7 +115,6 @@ class DRN(nn.Module):
                 x =nnf.interpolate(x, size=(len(copy[0][0]),len(copy[0][0][0])), mode='bicubic', align_corners=False)
 
             x = torch.cat((x, copy), 1)
-            torch.cat
             # output sr imgs
             sr = self.tail[idx + 1](x)
             sr = self.add_mean(sr)

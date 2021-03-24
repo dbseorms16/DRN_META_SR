@@ -156,7 +156,8 @@ def init_model(args):
     if args.model.find('DRN-L') >= 0:
         if args.scale == 4:
             args.n_blocks = 40
-            args.n_feats = 20
+            args.n_feats = 8
+            # args.n_feats = 20
         elif args.scale == 8:
             args.n_blocks = 36
             args.n_feats = 10

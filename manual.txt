@@ -19,6 +19,8 @@ python main.py --data_dir [root data dir] --save [save dir] --data_test [test da
 ex)
 python main.py --data_dir ./dataset --save ./experiments --data_test face_test --scale 4 --model DRN-L --pre_train  ./trained_models/face_trained_x4.pt --pre_train_dual  ./trained_models/face_trained_dual_x4.pt --test_only --save_results
 
+python main.py --model metardn --save metardn --ext sep --pre_train ./experiment/metardn/model/model_1000.pt --test_only --data_test Set5  --scale 1.5 --n_GPUs 1
+
   -위와 같이 커맨더 창에 입력하면 ./experiments/result 에 테스트 결과가 저장되고 테스트셋의 경로는 ./dataset/benchmark/face_test 가 됩니다. 이 때 이용하는 모델은 ./trained_models/face_trained_x4.pt와 ./trained_models/face_trained_dual_x4.pt입니다.  --test_only는 훈련이 아닌 테스트만 진행할 때 입력하는 명령어이고, 
 
 *DRN-L과 DRN-S의 차이는 파라미터의 수 입니다. DRN-L의 파라미터 수가 더 많아 더 좋은 결과를 얻을 수 있습니다.
@@ -39,6 +41,8 @@ LR이미지는[root data dir]/benchmark/[test data dir]/LR_bicubic/xscale(ex x4)
 
 -consistency loss 및 emsemble loss 사용은 trainer.py 주석해제, 해당 loss를 total loss 에 추가.
 
+
+python main.py --data_dir ./dataset --save ./experiments --data_test face_test --scale 3 --model DRN-L --pre_train  ./trained_models/face_data_best_x3.pt --pre_train_dual  ./trained_models/face_data_dual_best_x3.pt --test_only --save_results
 
 
 
