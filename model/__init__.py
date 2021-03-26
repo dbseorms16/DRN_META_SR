@@ -139,16 +139,19 @@ class Model(nn.Module):
                 if param_s[0] == 'up_blocks' and param_s[1] == '1' and param_s[2] != '41':
                     param1_names.append(param)
 
-            new_dict = {}
+            new_dict0 = {}
+            new_dict1 = {}
 
             for idx, param0 in enumerate(param0_names):
                 #1->2 upblock weight to weight2
-                new_dict[param0_names[idx]] = new_weight4[param0_names[idx]]
+                new_dict0[param0_names[idx]] = new_weight4[param0_names[idx]]
 
+            for idx, param0 in enumerate(param1_names):
                 #2->4 upblock weight to weight2
-                # new_dict[param0_names[idx]] = new_weight4[param1_names[idx]]
+                new_dict1[param0_names[idx]] = new_weight4[param1_names[idx]]
 
-            weight2.update(new_dict)
+            weight2.update(new_dict0)
+            # weight2.update(new_dict1)
 
             self.get_model().load_state_dict(
                 weight2,
