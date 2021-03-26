@@ -35,7 +35,13 @@ parser.add_argument('--pre_train', type=str, default='.',
                     help='pre-trained model directory')
 parser.add_argument('--pre_train_dual', type=str, default='.',
                     help='pre-trained dual model directory')
-parser.add_argument('--n_blocks', type=int, default=30,
+
+parser.add_argument('--new_pre_train', type=str, default='.',
+                    help='pre-trained model directory')
+parser.add_argument('--new_pre_train_dual', type=str, default='.',
+                    help='pre-trained dual model directory')
+
+parser.add_argument('--n_blocks', type=int, default=40,
                     help='number of residual blocks, 16|30|40|80')
 parser.add_argument('--n_feats', type=int, default=16,
                     help='number of feature maps')

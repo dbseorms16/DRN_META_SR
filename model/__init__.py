@@ -48,7 +48,7 @@ class Model(nn.Module):
             self.model = nn.DataParallel(self.model, range(opt.n_GPUs))
             self.dual_models = dataparallel(self.dual_models, range(opt.n_GPUs))
 
-        self.load(opt.pre_train, opt.pre_train_dual, cpu=opt.cpu)
+        self.load(opt.pre_train, opt.pre_train_dual, opt.new_pre_train, opt.new_pre_train_dual, cpu=opt.cpu)
 
         if not opt.test_only:
             print(self.model, file=ckp.log_file)
@@ -117,7 +117,7 @@ class Model(nn.Module):
                 os.path.join(path, 'model',args.data_train +'_dual_best_x'+str(args.scale[len(args.scale)-1])+'.pt')
             )
 
-    def load(self, pre_train='.', pre_train_dual='.', cpu=False):
+    def load(self, pre_train='.', pre_train_dual='.', new_pre_train='.', new_pre_train_dual='.', cpu=False):
         if cpu:
             kwargs = {'map_location': lambda storage, loc: storage}
         else:
@@ -126,34 +126,44 @@ class Model(nn.Module):
         if pre_train != '.':
             print('Loading model from {}'.format(pre_train))
 
-            # weight4 = (torch.load(pre_train, map_location=lambda storage, loc: storage))
-        
-            # print(weight4['up_blocks.0.37.body.2.bias'])
-            # print(weight4['up_blocks.1.37.body.2.bias'])
-            # param0_names = []
-            # param1_names = []
+            new_weight4 = (torch.load(new_pre_train, map_location=lambda storage, loc: storage))
+            weight2 = (torch.load(pre_train, map_location=lambda storage, loc: storage))
+           
+            param0_names = []
+            param1_names = []
 
-            # for param in weight4:
-            #     param_s = param.split('.')
-            #     if param_s[0] == 'up_blocks' and param_s[1] == '0':
-            #         param0_names.append(param)
-            #     if param_s[0] == 'up_blocks' and param_s[1] == '1':
-            #         param1_names.append(param)
+            for param in new_weight4:
+                param_s = param.split('.')
+                if param_s[0] == 'up_blocks' and param_s[1] == '0':
+                    param0_names.append(param)
+                if param_s[0] == 'up_blocks' and param_s[1] == '1' and param_s[2] != '41':
+                    param1_names.append(param)
 
-            # # for idx, param0 in enumerate(param0_names[:-2]):
-            #     # weight4[param0] = weight4[param1_names[idx]]
-            # # print(weight4['up_blocks.0.37.body.2.bias'])
+            new_dict = {}
+
+            for idx, param0 in enumerate(param0_names):
+                #1->2 upblock weight to weight2
+                new_dict[param0_names[idx]] = new_weight4[param0_names[idx]]
+
+                #2->4 upblock weight to weight2
+                # new_dict[param0_names[idx]] = new_weight4[param1_names[idx]]
+
+            weight2.update(new_dict)
 
             self.get_model().load_state_dict(
-                # weight4,
-                torch.load(pre_train, **kwargs),
+                weight2,
+                # torch.load(pre_train, **kwargs),
                 strict=False
             )
         #### load dual model ####
         if pre_train_dual != '.':
             print('Loading dual model from {}'.format(pre_train_dual))
-            dual_models = torch.load(pre_train_dual, **kwargs)
+
+            new_weight4_dual = (torch.load(new_pre_train_dual, map_location=lambda storage, loc: storage))
+            weight2_dual = (torch.load(pre_train_dual, map_location=lambda storage, loc: storage))
+
             for i in range(len(self.dual_models)):
                 self.get_dual_model(i).load_state_dict(
-                    dual_models[i], strict=False
+                    weight2_dual[i],
+                    strict=False
                 )

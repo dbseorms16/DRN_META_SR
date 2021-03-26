@@ -6,7 +6,6 @@ from option import args
 
 
 def make_model(opt):
-    print(DRN(opt))
     return DRN(opt)
 
 
