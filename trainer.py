@@ -192,8 +192,6 @@ class Trainer():
                 )
                 print('SIMM:',eval_simm)
 
-
-
         self.ckp.write_log(
             'Total time: {:.2f}s\n'.format(timer_test.toc()), refresh=True
         )

@@ -91,9 +91,9 @@ for fname in images:
 	img = cv2.imread(fname)
 	
 	# Scale factor
-	ratio = 1/3
+	ratio = 2
 	# Coefficient
-	a = -3
+	a = -1/2
 
 	dst = bicubic(img, ratio, a)
 	print('Completed!')

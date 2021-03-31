@@ -22,7 +22,7 @@ parser.add_argument('--data_range', type=str, default='',
                     help='train/test data range')
 parser.add_argument('--scale', type=int, default=4,
                     help='super resolution scale')
-parser.add_argument('--patch_size', type=int, default=12,
+parser.add_argument('--patch_size', type=int, default=80,
                     help='output patch size')
 parser.add_argument('--rgb_range', type=int, default=255,
                     help='maximum value of RGB')

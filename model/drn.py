@@ -17,6 +17,7 @@ class DRN(nn.Module):
         self.phase = len(opt.scale)
         n_blocks = opt.n_blocks
         n_feats = opt.n_feats
+        down_n_feats = int(opt.n_feats / 2)
         kernel_size = 3
 
         sf= 0

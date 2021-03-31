@@ -128,7 +128,8 @@ class Model(nn.Module):
 
             new_weight4 = (torch.load(new_pre_train, map_location=lambda storage, loc: storage))
             weight2 = (torch.load(pre_train, map_location=lambda storage, loc: storage))
-           
+            # for param in weight2:
+            #     print(param)
             param0_names = []
             param1_names = []
 
@@ -162,11 +163,23 @@ class Model(nn.Module):
         if pre_train_dual != '.':
             print('Loading dual model from {}'.format(pre_train_dual))
 
-            new_weight4_dual = (torch.load(new_pre_train_dual, map_location=lambda storage, loc: storage))
-            weight2_dual = (torch.load(pre_train_dual, map_location=lambda storage, loc: storage))
+            new_weight2_dual = (torch.load(new_pre_train_dual, map_location=lambda storage, loc: storage))
+            weight4_dual = (torch.load(pre_train_dual, map_location=lambda storage, loc: storage))
+
+            # print(new_weight2_dual)
+            # new0_0 = new_weight4_dual[0]['dual_module.0.0.weight']
+            # new0_1 = new_weight4_dual[1]['dual_module.0.0.weight']
+            # new1_0 = new_weight4_dual[0]['dual_module.1.weight']
+            # new1_1 = new_weight4_dual[1]['dual_module.1.weight']
+            
+            # new_weight0 = torch.cat([new0_0, new0_1], dim=0)
+            # new_weight1 = torch.cat([new1_0, new1_1], dim=1)
+
+            # weight2_dual[0]['dual_module.0.0.weight'] = new_weight0
+            # weight2_dual[0]['dual_module.1.weight'] = new_weight1
 
             for i in range(len(self.dual_models)):
                 self.get_dual_model(i).load_state_dict(
-                    weight2_dual[i],
+                    weight4_dual[i],
                     strict=False
                 )

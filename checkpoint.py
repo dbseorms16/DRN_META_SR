@@ -98,7 +98,6 @@ class Checkpoint():
         if not os.path.exists(apath):
             os.makedirs(apath)
         filename = os.path.join(apath, filename)
-
         normalized = sr[0].data.mul(255 / self.opt.rgb_range)
         ndarr = normalized.byte().permute(1, 2, 0).cpu().numpy()
         if not args.test_only:

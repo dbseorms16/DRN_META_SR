@@ -411,3 +411,829 @@ Evaluation:
 [face_test x3]	PSNR: 24.02 (Best: 24.02 @epoch 1)
 Total time: 3.68s
 
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 30.34 (Best: 30.34 @epoch 1)
+Total time: 4.98s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.58 (Best: 32.58 @epoch 1)
+Total time: 4.67s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.58 (Best: 32.58 @epoch 1)
+Total time: 4.44s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.58 (Best: 32.58 @epoch 1)
+Total time: 4.50s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.58 (Best: 32.58 @epoch 1)
+Total time: 4.67s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.58 (Best: 32.58 @epoch 1)
+Total time: 4.80s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.58 (Best: 32.58 @epoch 1)
+Total time: 4.66s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.58 (Best: 32.58 @epoch 1)
+Total time: 4.78s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.89 (Best: 32.89 @epoch 1)
+Total time: 4.54s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.68 (Best: 32.68 @epoch 1)
+Total time: 4.65s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.89 (Best: 32.89 @epoch 1)
+Total time: 4.46s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.68 (Best: 32.68 @epoch 1)
+Total time: 3.59s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.58 (Best: 32.58 @epoch 1)
+Total time: 3.59s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.89 (Best: 32.89 @epoch 1)
+Total time: 3.57s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 32.68 (Best: 32.68 @epoch 1)
+Total time: 3.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 28.23 (Best: 28.23 @epoch 1)
+Total time: 3.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.13 (Best: 31.13 @epoch 1)
+Total time: 3.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.92 (Best: 31.92 @epoch 1)
+Total time: 3.57s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 28.23 (Best: 28.23 @epoch 1)
+Total time: 3.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.13 (Best: 31.13 @epoch 1)
+Total time: 3.57s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.92 (Best: 31.92 @epoch 1)
+Total time: 3.59s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.13 (Best: 31.13 @epoch 1)
+Total time: 3.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.92 (Best: 31.92 @epoch 1)
+Total time: 3.72s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.92 (Best: 31.92 @epoch 1)
+Total time: 3.61s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 3.55s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.33 (Best: 33.33 @epoch 1)
+Total time: 3.68s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.33 (Best: 33.33 @epoch 1)
+Total time: 3.54s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 3.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 3.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 3.54s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 3.61s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.92 (Best: 31.92 @epoch 1)
+Total time: 3.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.92 (Best: 31.92 @epoch 1)
+Total time: 3.69s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.33 (Best: 33.33 @epoch 1)
+Total time: 3.65s
+
+The number of parameters is 0.61M
+The number of parameters is 0.61M
+
+Evaluation:
+[face_test x2]	PSNR: 35.76 (Best: 35.76 @epoch 1)
+Total time: 3.57s
+
+The number of parameters is 0.35M
+The number of parameters is 0.35M
+
+Evaluation:
+[face_test x2]	PSNR: 33.40 (Best: 33.40 @epoch 1)
+Total time: 3.55s
+
+The number of parameters is 1.54M
+The number of parameters is 1.54M
+
+Evaluation:
+[face_test x2]	PSNR: 33.28 (Best: 33.28 @epoch 1)
+Total time: 3.78s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.92 (Best: 31.92 @epoch 1)
+Total time: 3.61s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 30.93 (Best: 30.93 @epoch 1)
+Total time: 3.67s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.33 (Best: 33.33 @epoch 1)
+Total time: 3.70s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.33 (Best: 33.33 @epoch 1)
+Total time: 3.73s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.92 (Best: 31.92 @epoch 1)
+Total time: 3.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 30.93 (Best: 30.93 @epoch 1)
+Total time: 3.57s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.92 (Best: 31.92 @epoch 1)
+Total time: 3.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.33 (Best: 33.33 @epoch 1)
+Total time: 3.57s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 5.56s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 31.92 (Best: 31.92 @epoch 1)
+Total time: 4.94s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.75s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 22.11 (Best: 22.11 @epoch 1)
+Total time: 4.80s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.68s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.33s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.54s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.71s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.60s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.59s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.51s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.56s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.60s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.66s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.63s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.58s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.52s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.70s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.63s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 4.67s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 22.11 (Best: 22.11 @epoch 1)
+Total time: 4.69s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.56s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.64s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.76s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.49s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.49s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.63s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.73s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.76s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.63s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 21.43 (Best: 21.43 @epoch 1)
+Total time: 5.04s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 29.21 (Best: 29.21 @epoch 1)
+Total time: 4.96s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 22.08 (Best: 22.08 @epoch 1)
+Total time: 4.79s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 5.09s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.63s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 29.21 (Best: 29.21 @epoch 1)
+Total time: 4.99s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 29.21 (Best: 29.21 @epoch 1)
+Total time: 4.50s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 25.64 (Best: 25.64 @epoch 1)
+Total time: 4.51s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 34.70 (Best: 34.70 @epoch 1)
+Total time: 4.61s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 29.21 (Best: 29.21 @epoch 1)
+Total time: 4.41s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 22.08 (Best: 22.08 @epoch 1)
+Total time: 4.30s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 33.45 (Best: 33.45 @epoch 1)
+Total time: 4.23s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 26.54 (Best: 26.54 @epoch 1)
+Total time: 4.39s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 30.40 (Best: 30.40 @epoch 1)
+Total time: 4.46s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 30.40 (Best: 30.40 @epoch 1)
+Total time: 4.41s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 26.54 (Best: 26.54 @epoch 1)
+Total time: 4.39s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.69 (Best: 27.69 @epoch 1)
+Total time: 4.35s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.60 (Best: 27.60 @epoch 1)
+Total time: 4.41s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.60 (Best: 27.60 @epoch 1)
+Total time: 4.46s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.60 (Best: 27.60 @epoch 1)
+Total time: 4.46s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 26.54 (Best: 26.54 @epoch 1)
+Total time: 4.28s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.60 (Best: 27.60 @epoch 1)
+Total time: 4.44s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.69 (Best: 27.69 @epoch 1)
+Total time: 4.29s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.70 (Best: 27.70 @epoch 1)
+Total time: 4.50s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.65 (Best: 27.65 @epoch 1)
+Total time: 4.55s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 28.44 (Best: 28.44 @epoch 1)
+Total time: 4.54s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 30.40 (Best: 30.40 @epoch 1)
+Total time: 4.54s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 28.39 (Best: 28.39 @epoch 1)
+Total time: 4.53s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.66 (Best: 27.66 @epoch 1)
+Total time: 4.48s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.70 (Best: 27.70 @epoch 1)
+Total time: 4.40s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 28.28 (Best: 28.28 @epoch 1)
+Total time: 4.03s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.67 (Best: 27.67 @epoch 1)
+Total time: 3.94s
+
+The number of parameters is 1.58M
+The number of parameters is 1.58M
+
+Evaluation:
+[face_test x4]	PSNR: 27.63 (Best: 27.63 @epoch 1)
+Total time: 4.03s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 29.23 (Best: 29.23 @epoch 1)
+Total time: 4.15s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 35.56 (Best: 35.56 @epoch 1)
+Total time: 3.38s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 29.23 (Best: 29.23 @epoch 1)
+Total time: 3.35s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 29.23 (Best: 29.23 @epoch 1)
+Total time: 3.51s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 29.23 (Best: 29.23 @epoch 1)
+Total time: 3.48s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 35.56 (Best: 35.56 @epoch 1)
+Total time: 3.43s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 35.56 (Best: 35.56 @epoch 1)
+Total time: 3.43s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 27.78 (Best: 27.78 @epoch 1)
+Total time: 3.44s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 14.86 (Best: 14.86 @epoch 1)
+Total time: 3.60s
+
+The number of parameters is 0.79M
+The number of parameters is 0.79M
+
+Evaluation:
+[face_test x2]	PSNR: 29.23 (Best: 29.23 @epoch 1)
+Total time: 3.47s
+
